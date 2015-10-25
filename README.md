@@ -1,22 +1,17 @@
-# ember-cli-textillate
+# ember-cli-powerbars
 
-Include textillate in an ember-cli app.
+Include powerbars in an ember-cli app.
 
-When the addon is installed, it will add textillate `latest` as
+When the addon is installed, it will add powerbars `latest` as
 a bower dependency.
 
 ## Dependencies
-
-Depends on a couple other ember addons:
-
-     "ember-cli-lettering-js": "latest",
-     "ember-cli-animate-css": "latest"
 
 
 ## Usage
 Just install with
 
-    ember install ember-cli-textillate
+    ember install ember-cli-powerbars
 
 ## Developing this Addon
 
