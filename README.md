@@ -1,9 +1,5 @@
 # ember-cli-powerbars
-
-Include powerbars in an ember-cli app.
-
-When the addon is installed, it will add powerbars `latest` as
-a bower dependency.
+These are a set of extensions to HTMLBars similar to `ember-truth-helpers`.
 
 ## guide:
 
