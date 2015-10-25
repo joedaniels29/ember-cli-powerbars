@@ -1,3 +1,123 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">ember-cli-powerbars</h2>
+
+<ul>
+
+    <li>eq-eq:
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th>true</th>
+                <th>false</th>
+            </tr>
+            </thead>
+            <tr>
+                <th>True</th>
+                <td>{{eq-eq true true}}</td>
+                <td>{{eq-eq true false}}</td>
+            </tr>
+            <tr>
+                <th>False</th>
+                <td>{{eq-eq false true}}</td>
+                <td>{{eq-eq false false}}</td>
+            </tr>
+
+
+        </table>
+    </li>
+    <li>And-And:
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th>true</th>
+                <th>false</th>
+            </tr>
+            </thead>
+            <tr>
+                <th>True</th>
+                <td>{{and-and true true}}</td>
+                <td>{{and-and true false}}</td>
+            </tr>
+            <tr>
+                <th>False</th>
+                <td>{{and-and false true}}</td>
+                <td>{{and-and false false}}</td>
+            </tr>
+
+
+        </table>
+    </li>
+    <li>Or-Or:
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th>true</th>
+                <th>false</th>
+            </tr>
+            </thead>
+            <tr>
+                <th>True</th>
+                <td>{{or-or true true}}</td>
+                <td>{{or-or true false}}</td>
+            </tr>
+            <tr>
+                <th>False</th>
+                <td>{{or-or false true}}</td>
+                <td>{{or-or false false}}</td>
+            </tr>
+
+
+        </table>
+    </li>
+
+    <li>Is-Not:
+        <table>
+            <thead>
+            </thead>
+            <tr>
+                <th>True</th>
+                <td>{{is-not true}}</td>
+            </tr>
+            <tr>
+                <th>False</th>
+                <td>{{is-not false}}</td>
+            </tr>
+
+        </table>
+    </li>
+
+
+    <h2>numeric Opps</h2>
+    <li>Minus-Minus:
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th>plus-plus</th>
+                <th>minus-minus</th>
+            </tr>
+            </thead>
+            <tr>
+                <th>1</th>
+                <td>{{plus-plus 1}}</td>
+                <td>{{minus-minus 1}}</td>
+            </tr>
+            <tr>
+                <th>opp(2, 3)</th>
+                <td>{{plus-plus 2 3}}</td>
+                <td>{{minus-minus 2 3}}</td>
+            </tr>
+
+
+        </table>
+    </li>
+
+</ul>
+
+
+
+
 
 {{outlet}}

@@ -5,7 +5,42 @@ Include powerbars in an ember-cli app.
 When the addon is installed, it will add powerbars `latest` as
 a bower dependency.
 
-## Dependencies
+## guide:
+
+*   eq-eq:
+
+     true | false |
+    | --- | --- | --- |
+    | True | true | false |
+    | False | false | true |
+
+*   And-And:
+
+     true | false |
+    | --- | --- | --- |
+    | True | true | false |
+    | False | false | false |
+
+*   Or-Or:
+
+     true | false |
+    | --- | --- | --- |
+    | True | true | true |
+    | False | true | false |
+
+*   Is-Not:
+
+    | True | false |
+    | False | true |
+
+## numeric Opps
+
+*   Minus-Minus:
+
+     plus-plus | minus-minus |
+    | --- | --- | --- |
+    | 1 | 2 | 0 |
+    | opp(2, 3) | 5 | -1 |
 
 
 ## Usage
