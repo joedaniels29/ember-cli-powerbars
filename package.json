@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-powerbars",
   "description": "Powerful powerups for your htmlbars!",
-  "version": "0.0.8",
+  "version": "0.0.1",
   "directories": {
     "test": "tests"
   },
