@@ -1,42 +1,81 @@
-# ember-cli-powerbars
+![Powerbars!](assets/powerbars.jpg?raw=true "Optional Title")
 These are a set of extensions to HTMLBars similar to `ember-truth-helpers`.
 
 ## guide:
 
-*   eq-eq:
+###eq-eq:
+######Example:
+Suppose `a = 4`, `b = 4`, `c = 4`.
 
-     true | false |
-    | --- | --- | --- |
-    | True | true | false |
-    | False | false | true |
+```hbs
+{{eq-eq a b}} {{! evaluates to true }}
+{{eq-eq a c}} {{! evaluates to false }}
+```
 
-*   And-And:
+ |  a = `true` | b = `false` |
+| --- | --- | --- |
+| `true` | `true` | `false` |
+| `false` | `false` | `true` |
 
-     true | false |
-    | --- | --- | --- |
-    | True | true | false |
-    | False | false | false |
+###And-And:
 
-*   Or-Or:
+######Example:
+Suppose `a = 4`, `b = 4`, `c = 4`.
 
-     true | false |
-    | --- | --- | --- |
-    | True | true | true |
-    | False | true | false |
+```hbs
+{{eq-eq a b}} {{! evaluates to true }}
+{{eq-eq a c}} {{! evaluates to false }}
+```
 
-*   Is-Not:
+ |`true` | `false` |
+| --- | --- | --- |
+| `true` | `true` | `false` |
+| `false` | `false` | `false` |
 
-    | True | false |
-    | False | true |
+###Or-Or:
 
-## numeric Opps
+######Example:
+Suppose `a = 4`, `b = 4`, `c = 4`.
 
-*   Minus-Minus:
+```hbs
+{{eq-eq a b}} {{! evaluates to true }}
+{{eq-eq a c}} {{! evaluates to false }}
+```
 
-     plus-plus | minus-minus |
-    | --- | --- | --- |
-    | 1 | 2 | 0 |
-    | opp(2, 3) | 5 | -1 |
+ | `true` | `false` |
+| --- | --- | --- |
+| `true` | `true` | `true` |
+| `false` | `true` | `false` |
+
+###Is-Not:
+######Example:
+Suppose `a = 4`, `b = 4`, `c = 4`.
+
+```hbs
+{{eq-eq a b}} {{! evaluates to true }}
+{{eq-eq a c}} {{! evaluates to false }}
+```
+
+| `true` | `false` |
+| --- | --- | 
+| `false` | `true` |
+
+## Numeric Opperations
+
+### ++, -- :
+
+######Example:
+Suppose `a = 4`, `b = 4`, `c = 4`.
+
+```hbs
+{{eq-eq a b}} {{! evaluates to true }}
+{{eq-eq a c}} {{! evaluates to false }}
+```
+
+  | plus-plus | minus-minus |
+| --- | --- | --- |
+| 1 | 2 | 0 |
+| opp(2, 3) | 5 | -1 |
 
 
 ## Usage
@@ -48,6 +87,9 @@ Just install with
 
 * `ember server`
 * Visit the dummy app at http://localhost:4200.
+* Ember it up. 
+
+
 
 ## Running Tests
 
