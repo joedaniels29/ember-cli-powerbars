@@ -1,4 +1,4 @@
-![Powerbars!](assets/powerbars.jpg?raw=true "Optional Title")
+![Powerbars!](webassets/powerbars.jpg?raw=true "Optional Title")
 These are a set of extensions to HTMLBars similar to `ember-truth-helpers`.
 
 ## guide:
