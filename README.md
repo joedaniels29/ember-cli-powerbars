@@ -5,7 +5,7 @@ These are a set of extensions to HTMLBars similar to `ember-truth-helpers`.
 
 ###eq-eq:
 ######Example:
-Suppose `a = 4`, `b = 4`, `c = 4`.
+Suppose `a = 4`, `b = 4`, `c = 5`.
 
 ```hbs
 {{eq-eq a b}} {{! evaluates to true }}
@@ -20,40 +20,30 @@ Suppose `a = 4`, `b = 4`, `c = 4`.
 ###And-And:
 
 ######Example:
-Suppose `a = 4`, `b = 4`, `c = 4`.
+Suppose `a = 4`, `b = null`, `c = 5`.
 
 ```hbs
-{{eq-eq a b}} {{! evaluates to true }}
-{{eq-eq a c}} {{! evaluates to false }}
+{{and-and a b}} {{! evaluates to 4}}
+{{and-and b c}} {{! evaluates to c }}
 ```
-
- |`true` | `false` |
-| --- | --- | --- |
-| `true` | `true` | `false` |
-| `false` | `false` | `false` |
 
 ###Or-Or:
 
 ######Example:
-Suppose `a = 4`, `b = 4`, `c = 4`.
+Suppose `a = 4`, `b = null`, `c = 5`.
 
 ```hbs
-{{eq-eq a b}} {{! evaluates to true }}
-{{eq-eq a c}} {{! evaluates to false }}
+{{eq-eq a c}} {{! evaluates to 5}}
+{{eq-eq a c}} {{! evaluates to null }}
 ```
-
- | `true` | `false` |
-| --- | --- | --- |
-| `true` | `true` | `true` |
-| `false` | `true` | `false` |
 
 ###Is-Not:
 ######Example:
-Suppose `a = 4`, `b = 4`, `c = 4`.
+Suppose `a = 4`, `b = null`, `c = 5`.
 
 ```hbs
-{{eq-eq a b}} {{! evaluates to true }}
-{{eq-eq a c}} {{! evaluates to false }}
+{{is-not a}} {{! evaluates to false }}
+{{is-not b}} {{! evaluates to true }}
 ```
 
 | `true` | `false` |
@@ -65,11 +55,11 @@ Suppose `a = 4`, `b = 4`, `c = 4`.
 ### ++, -- :
 
 ######Example:
-Suppose `a = 4`, `b = 4`, `c = 4`.
+Suppose `a = 4`, `b = 4`, `c = 5`.
 
 ```hbs
-{{eq-eq a b}} {{! evaluates to true }}
-{{eq-eq a c}} {{! evaluates to false }}
+{{plus-plus a}} {{! evaluates to 5 }}
+{{plus-plus a c}} {{! evaluates to  9 }}
 ```
 
   | plus-plus | minus-minus |
