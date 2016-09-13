@@ -5,7 +5,7 @@ moduleForComponent('is-not', 'Integration | Component | is not', {
   integration: true
 });
 
-renderAndCheck = (a, b, c) => {
+var renderAndCheck = (a, b, c) => {
 
   this.set('a', a);
   //this.set('b', b);

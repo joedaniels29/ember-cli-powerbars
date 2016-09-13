@@ -5,7 +5,7 @@ moduleForComponent('and-and', 'Integration | Component | and and', {
     integration: true
 });
 
-renderAndCheck = (a, b, c) => {
+var renderAndCheck = (a, b, c) => {
 
     this.set('a', a);
     this.set('b', b);

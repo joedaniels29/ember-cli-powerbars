@@ -5,7 +5,7 @@ moduleForComponent('minus-minus', 'Integration | Component | minus minus', {
   integration: true
 });
 
-renderAndCheck = (a, b, c) => {
+var renderAndCheck = (a, b, c) => {
 
   this.set('a', a);
   this.set('b', b);

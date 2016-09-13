@@ -4,7 +4,7 @@ import hbs from 'htmlbars-inline-precompile';
 moduleForComponent('plus-plus', 'Integration | Component | plus plus', {
   integration: true
 });
-renderAndCheck = (a, b, c) => {
+var renderAndCheck = (a, b, c) => {
 
   this.set('a', a);
   this.set('b', b);
