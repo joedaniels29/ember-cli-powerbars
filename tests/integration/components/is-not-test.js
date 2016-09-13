@@ -5,7 +5,7 @@ moduleForComponent('is-not', 'Integration | Component | is not', {
   integration: true
 });
 
-var renderAndCheck = (a, b, c) => {
+var renderAndCheck = (assert, a, b, c) => {
 
   this.set('a', a);
   //this.set('b', b);
@@ -18,6 +18,6 @@ test('it renders', function(assert) {
 
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
-  renderAndCheck(true, false);
-  renderAndCheck(false, true);
+  renderAndCheck(assert, true, false);
+  renderAndCheck(assert, false, true);
 });

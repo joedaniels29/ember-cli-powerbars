@@ -5,7 +5,7 @@ moduleForComponent('eq-eq', 'Integration | Component | eq eq', {
   integration: true
 });
 
-var renderAndCheck = (a, b, c) => {
+var renderAndCheck = (assert, a, b, c) => {
 
   this.set('a', a);
   this.set('b', b);
@@ -20,9 +20,9 @@ test('it renders', function(assert) {
   // Handle any actions with this.on('myAction', function(val) { ... });
 
 
-  renderAndCheck(true, true, true);
-  renderAndCheck(5, 4, false);
-  renderAndCheck(5, 5, true);
-  renderAndCheck("a", 3, false);
-  renderAndCheck("3", 3, false);
+  renderAndCheck(assert, true, true, true);
+  renderAndCheck(assert, 5, 4, false);
+  renderAndCheck(assert, 5, 5, true);
+  renderAndCheck(assert, "a", 3, false);
+  renderAndCheck(assert, "3", 3, false);
 });

@@ -5,7 +5,7 @@ moduleForComponent('minus-minus', 'Integration | Component | minus minus', {
   integration: true
 });
 
-var renderAndCheck = (a, b, c) => {
+var renderAndCheck = (assert, a, b, c) => {
 
   this.set('a', a);
   this.set('b', b);
@@ -18,7 +18,7 @@ test('it renders', function(assert) {
 
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
-  renderAndCheck(5, 4, 1);
-  renderAndCheck(5, 5, 0);
-  renderAndCheck(0, undefined, -1);
+  renderAndCheck(assert, 5, 4, 1);
+  renderAndCheck(assert, 5, 5, 0);
+  renderAndCheck(assert, 0, undefined, -1);
 });

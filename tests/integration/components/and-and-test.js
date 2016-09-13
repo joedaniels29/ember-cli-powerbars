@@ -5,7 +5,7 @@ moduleForComponent('and-and', 'Integration | Component | and and', {
     integration: true
 });
 
-var renderAndCheck = (a, b, c) => {
+var renderAndCheck = (assert, a, b, c) => {
 
     this.set('a', a);
     this.set('b', b);
@@ -16,9 +16,9 @@ var renderAndCheck = (a, b, c) => {
 
 test('it renders', function (assert) {
     // Handle any actions with this.on('myAction', function(val) { ... });
-    renderAndCheck(true, true, true);
-    renderAndCheck(true, false, false);
-    renderAndCheck(true, false, false);
-    renderAndCheck(false, true, false);
-    renderAndCheck(false, false, false);
+    renderAndCheck(assert, true, true, true);
+    renderAndCheck(assert, true, false, false);
+    renderAndCheck(assert, true, false, false);
+    renderAndCheck(assert, false, true, false);
+    renderAndCheck(assert, false, false, false);
 });
